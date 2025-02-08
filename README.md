@@ -1,11 +1,45 @@
-# Data Extraction and NLP Text Analysis
+# 📝 BlackCoffer Data Extraction & NLP Analysis
 
-To complete this assignment, I will first extract textual data articles from the provided URL and save the extracted article text in separate text files, with the URL_ID as the file name. During extraction, I'll ensure to include only the article title and text, excluding any website header, footer, or other irrelevant content.
+This project focuses on **extracting textual data** from given URLs and performing **text analysis** to compute various linguistic variables.
 
-Once the extraction is complete, I'll proceed with the text analysis as per the variables defined in the "Text Analysis.docx" file. I'll compute each variable for every extracted article text and organize the results according to the structure specified in the "Output Data Structure.xlsx" file.
+## 🚀 Objective
+The goal is to:
+1. Extract article text from URLs provided in `Input.xlsx`.
+2. Perform text analysis and compute variables as per `Output Data Structure.xlsx`.
+3. Save the extracted text and analyzed output in the required format.
 
-My process will involve thorough text processing techniques, including tokenization, sentence segmentation, part-of-speech tagging, named entity recognition, and sentiment analysis, among others, to accurately compute the required variables.
+## 📌 Data Extraction
+- **Input**: URLs provided in `Input.xlsx`
+- **Output**: Extracted article text stored in text files (`URL_ID.txt`)
+- **Requirements**:
+  - Extract only the **article title** and **article text** (exclude headers, footers, etc.).
+  - Use **Python** with libraries like:
+    - `BeautifulSoup`
+    - `Selenium`
+    - `Scrapy`
+    - Any other preferred web scraping tool.
 
-After analyzing each article text and computing the variables, I'll save the output in the specified format, ensuring that the variables are presented in the exact order as specified in the output structure file.
+## 📊 Text Analysis
+For each extracted text, compute the following **linguistic variables** as per `Text Analysis.docx`:
+- **POSITIVE SCORE**
+- **NEGATIVE SCORE**
+- **POLARITY SCORE**
+- **SUBJECTIVITY SCORE**
+- **AVG SENTENCE LENGTH**
+- **PERCENTAGE OF COMPLEX WORDS**
+- **FOG INDEX**
+- **AVG NUMBER OF WORDS PER SENTENCE**
+- **COMPLEX WORD COUNT**
+- **WORD COUNT**
+- **SYLLABLE PER WORD**
+- **PERSONAL PRONOUNS**
+- **AVG WORD LENGTH**
 
-Throughout the process, I'll maintain accuracy, efficiency, and adherence to the provided instructions to produce the desired output.
+## 📁 Output Format
+- The output should be stored in a CSV/Excel file structured as per `Output Data Structure.xlsx`.
+
+## 🛠️ Setup & Execution
+### **1️⃣ Install Dependencies**
+Ensure you have Python installed, then install required libraries:
+```bash
+pip install beautifulsoup4 selenium scrapy pandas nltk openpyxl
