@@ -38,9 +38,33 @@ For each extracted text, compute the following **linguistic variables** as per `
 ## 📁 Output Format
 - The output should be stored in a CSV/Excel file structured as per `Output Data Structure.xlsx`.
 
-## 🛠️ Setup & Execution
+## 📖 Instructions & Approach
+
+### **🔹 How We Approached the Solution**
+1. **Data Extraction**:
+   - Read URLs from `Input.xlsx`.
+   - Used web scraping techniques with `BeautifulSoup`
+   - Stored extracted text in `.txt` files named after `URL_ID`.
+
+2. **Text Analysis**:
+   - Processed the extracted text using `NLTK` and `TextBlob`.
+   - Computed required linguistic variables, including:
+     - **Sentiment Scores** (Positive, Negative, Polarity, Subjectivity)
+     - **Readability Metrics** (Fog Index, Complex Word Percentage)
+     - **Text Structure** (Word Count, Syllables, Sentence Length)
+   - Saved results in `Output Data Structure.xlsx` format.
+
+3. **Final Output**:
+   - Ensured the **output format matched exactly** as per `Output Data Structure.xlsx`.
+   - Provided an easy-to-run **Python script** with clear execution steps.
+
+---
+
+## 🛠️ How to Run the `.py` File
 ### **1️⃣ Install Dependencies**
-Ensure you have Python installed, then install required librarie:
+Ensure you have Python installed, then install :
 ```bash
 pip install beautifulsoup4
+
+
 
